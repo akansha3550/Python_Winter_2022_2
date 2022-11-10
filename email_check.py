@@ -17,6 +17,10 @@ def check_email(email):
     if not (email.find('@') == email.rfind('@')):
         print('@ too many of them')
         return False
+
+
+
+
     return True
 
 
