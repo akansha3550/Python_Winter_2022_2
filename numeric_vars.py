@@ -51,4 +51,7 @@ a = int(s1)
 b = float(s2)
 print(a + b)
 
+
+print(a)
+
 print(round(b, 2))
