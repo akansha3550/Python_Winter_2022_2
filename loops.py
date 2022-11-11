@@ -24,6 +24,9 @@ j = 0
 #     print(f'j={j}')
 
 while True:
+
+
+
     j += 1
     if j == 3:
         continue
