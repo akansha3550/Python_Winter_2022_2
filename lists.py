@@ -23,4 +23,11 @@ for val in l1:
 
 l4 = [321, 26, 23163, 'Hello from Python 3', 3267, 89]
 #TODO extract the "Python" string from the list l4
-#TODO sum up all numbers from l4  (type - check if it is a number)
+#TODO sum up all numbers from l4  (type - check if it is a nl4
+
+for str in l4:
+    print(type[str])
+    print(l4)
+
+
+
