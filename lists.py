@@ -23,10 +23,11 @@ for val in l1:
 
 l4 = [321, 26, 23163, 'Hello from Python 3', 3267, 89]
 #TODO extract the "Python" string from the list l4
-
+print(l4[3])
 for item in l4:
     if type(item) is str:
         print(item.split()[-2])
+
 
 #TODO sum up all numbers from l4  (type - check if it is a nl4
 
