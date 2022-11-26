@@ -1,11 +1,24 @@
-keys_in_file = {}
-with open ('Kennedy.txt', 'r') as f:
-    for i,line in enumerate(f):
-        words = line.strip().split()
-        for word in set(words):
-            keys_in_file.setdefault(word, []).append(i+1)
+import string
+text = open("my_txt_file.txt", "r")
 
-print (keys_in_file)
-words = line.lower().strip().split()
-for k in sorted(keys_in_file):
-    print (k+':', *keys_in_file[k])
+d = dict()
+for line in text:
+    line = line.strip()
+
+    line = line.lower()
+
+    # Remove the punctuation marks from the line
+    line = line.translate(line.maketrans(" ", " ", string.punctuation))
+
+    words = line.split(" ")
+
+    # Iterate over each word in line
+    for word in words:
+        # Check if the word is already in dictionary
+        if word in d:
+            d[word] = d[word] + 1
+        else:
+            d[word] = 1
+
+for key in list(d.keys()):
+    print(key, ":", d[key])

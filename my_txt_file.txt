@@ -1,0 +1,6 @@
+
+Many times it is required to count the occurrence of each word in a text file!
+To achieve so, we make use of a dictionary object that stores the word as the key
+and its count as the corresponding value.
+We iterate through each word in the file and add ($) it to the dictionary with a count of #1.
+If the word is already present in the dictionary we increment its count by 1.
