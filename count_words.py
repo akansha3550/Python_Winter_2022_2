@@ -4,7 +4,6 @@ text = open("my_txt_file.txt", "r")
 d = dict()
 for line in text:
     line = line.strip()
-
     line = line.lower()
 
     # Remove the punctuation marks from the line
