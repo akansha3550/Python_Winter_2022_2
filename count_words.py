@@ -4,6 +4,8 @@ text = open("my_txt_file.txt", "r")
 d = dict()
 for line in text:
     line = line.strip()
+    # Convert the characters in line to
+    # lowercase to avoid case mismatch
     line = line.lower()
 
     # Remove the punctuation marks from the line
