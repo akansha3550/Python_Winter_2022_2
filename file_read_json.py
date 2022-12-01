@@ -9,6 +9,9 @@ my_out_file = 'my_matrix_out.json'
 
 my_file = os.path.join(os.path.dirname(__file__),my_out_file)
 
+my_file = my_out_file
+print('Trying to read: {}'.format(os.path.abspath(my_file)))
+
 with open(my_file, 'r') as f:
     m = json.load(f)
     print(m)
