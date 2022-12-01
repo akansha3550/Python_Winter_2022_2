@@ -1,5 +1,6 @@
 import json
 
+my_out_file = 'C:/Users//akans/my_matrix_out.json'
 my_out_file = 'my_matrix_out.json'
 with open(my_out_file, 'r') as f:
     m = json.load(f)
