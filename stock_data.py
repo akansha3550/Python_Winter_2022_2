@@ -10,7 +10,7 @@ def files(p):
     return lista
 
 
-def leer_csv(file):
+def csv_file(file):
     with open(file, newline='') as csvfile:
         fetch_file = csv.reader(csvfile, delimiter=',')
         tabla = []
@@ -29,7 +29,7 @@ def describe_csv(file, head):
 
 
 
-data = Path(r'C:\Users\akans\PycharmProjects\Data')
+data = Path(r'C:\Users\akans\PycharmProjects\Data') #The csv files in data folder
 result = Path(r'C:\Users\akans\PycharmProjects\Output')
 
 
@@ -43,7 +43,7 @@ for f in list:
     file = f1[(ind+1):]
     print('file', file)
 
-    table = leer_csv(f)
+    table = csv_file(f)
 
 
     head = [table[0]]
